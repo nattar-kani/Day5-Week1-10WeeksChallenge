@@ -15,7 +15,7 @@ PyForge currently provides five CLI commands:
 Clone the repository and create a virtual environment:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/nattar-kani/Day5-Week1-10WeeksChallenge
 cd pyforge
 
 python -m venv pyforge-env
@@ -97,7 +97,7 @@ The project maintains more than 70% test coverage.
 
 ## Usage Demo
 
-![PyForge CLI Demo](docs/pyforge-demo.gif)
+![PyForge CLI Demo](docs/pyforge-workingdemo.gif)
 
 ## What I Practiced
 
