@@ -2,8 +2,27 @@
 name = "pyforge"
 version = "0.1.0"
 description = "A Python developer productivity CLI"
-requires-python = ">3.10"
+requires-python = ">=3.10"
+
+[project.scripts]
+pyforge = "pyforge:main"
+
+[tool.setuptools]
+py-modules = ["pyforge"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
 [tool.coverage.run]
-source = ["src/pyforge.py"]
+source = ["src"]
+
+[tool.coverage.report]
+omit = [
+    "src/args_demo.py",
+    "src/loggin_demo.py",
+    "src/main.py"
+]

@@ -1,14 +1,10 @@
 import argparse
 import logging
 from decorators.core import log_calls
-from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-LOG_DIR = BASE_DIR/"logs"
-LOG_DIR.mkdir(exist_ok=True)
 
 logging.basicConfig(
-    filename=LOG_DIR/"pyforge.log",
+    filename="../logs/pyforge.log",
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s"
 )
