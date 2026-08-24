@@ -131,15 +131,19 @@ version_parser.add_argument(
     help="showing version"
 )
 
-args = parser.parse_args()
+def main():
+    args = parser.parse_args()
 
-if args.command == "analyze":
-    analyze(args)
-elif args.command == "clean":
-    clean(args)
-elif args.command =="stats":
-    stats(args)
-elif args.command == "config":
-    config(args)
-elif args.command == "version":
-    version(args)
+    if args.command == "analyze":
+        analyze(args)
+    elif args.command == "clean":
+        clean(args)
+    elif args.command =="stats":
+        stats(args)
+    elif args.command == "config":
+        config(args)
+    elif args.command == "version":
+        version(args)
+
+if __name__ == "__main__":
+    main()
