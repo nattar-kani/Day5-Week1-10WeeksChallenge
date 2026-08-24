@@ -98,19 +98,3 @@ The project maintains more than 70% test coverage.
 ## Usage Demo
 
 ![PyForge CLI Demo](docs/pyforge-workingdemo.gif)
-
-## What I Practiced
-
-This project helped me practice:
-
-* Python CLI development with `argparse`
-* Subcommands and command-line arguments
-* Logging
-* Python decorators
-* `pytest` and parameterized testing
-* Test coverage
-* Python packaging with `pyproject.toml`
-* Editable package installation with `pip install -e .`
-* Building a CLI that can be executed directly from the terminal
-
-
